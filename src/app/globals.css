@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans;
+    overflow-anchor: none;
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+/* Animation Css */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Remove autofill background color */
+input:-webkit-autofill {
+    background-color: white !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+    color: #374151 !important;
+    -webkit-text-fill-color: #374151 !important;
+}
+
+/* Ensures background remains white even on focus */
+input:-webkit-autofill:focus {
+    background-color: white !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+}
