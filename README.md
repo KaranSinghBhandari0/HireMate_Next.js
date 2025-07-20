@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 HireMate
 
-## Getting Started
+**HireMate** is an AI-powered full-stack web application designed to help users prepare for job interviews through realistic mock sessions. It features AI interviewers tailored to job roles, progress tracking, and detailed post-interview feedback — all in one place.
 
-First, run the development server:
+## 🌐 Live Demo
+
+<a href='https://hiremate-by-karan.vercel.app'> 
+    <img src='./hireMate-demo.png'>
+    </img>
+</a>
+
+---
+
+## ✨ Features
+
+- 🔐 **Advanced Authentication** with OTP verification  
+- 🧠 **AI-Powered Voice Interviews** using VAPI Agent  
+- 📊 **Detailed Interview Feedback** with scoring and suggestions  
+- 🛠️ **Admin Dashboard** to manage job listings (Add / Update / Delete)
+
+---
+
+## 💻 Tech Stack
+
+**Framework:** Next.js  
+**Styling:** Tailwind CSS  
+**Database:** MongoDB  
+**AI Integration:** VAPI AI, OpenAI  
+**Cloud Service:** Cloudinary
+
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/KaranSinghBhandari0/HireMate_Next.js.git
+cd hiremate
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚙️ Environment Variables
+---
+To run this project, you will need to add the following environment variables to your .env files
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+MONGO_URL=your_mongodb_connection_string
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+JWT_SECRET=your_jwt_secret
 
-## Learn More
+CLOUD_NAME=your_cloudinary_cloud_name
 
-To learn more about Next.js, take a look at the following resources:
+API_KEY=your_cloudinary_api_key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API_SECRET=your_cloudinary_api_secret
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ADMIN_ID=admin_id
 
-## Deploy on Vercel
+MAIL_USER=your_email_address
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MAIL_PASS=your_email_password
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+NEXT_PUBLIC_OPENROUTER_API_KEY=your_OpenAI_key
+
+NEXT_PUBLIC_VAPI_API_KEY=your_VAPI_key
